@@ -1,0 +1,136 @@
+/*body{
+	background: #16a085;
+	margin: 0px;
+	font-family: sans-serif;
+}*/
+
+.chat_box,.msg_box{
+	cursor:pointer;
+	position:fixed; 
+	bottom:0px;
+	right: 20px;
+	background: white;
+	width:250px;
+	border-radius: 5px 5px 0px 0px;
+
+}
+
+.chat_head,.msg_head{
+	background: rgb(64, 125, 59);  /*#f39c12;*/
+	padding:15px;
+	color: white;
+	border-radius: 4px 4px 0px 0px;
+	
+}
+
+.chat_body{
+	height:350px;
+	/*background: black;*/
+}
+
+.msg_box{
+	background: white;
+	width: 250;
+	/*bottom: -5px;*/
+	
+}
+.close{
+	float: right;
+}
+.msg_input{
+	border:transparent;
+	border-top: 1px solid #bdc3c7;
+	width: 100%;
+	padding: 5px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	resize: none;
+	background-color: rgba(19, 255, 0, 0.1);
+}
+.msg_head{
+	background:  rgb(103, 205, 239); /*#3498db;*/
+
+}
+.msg_body{
+	height: 250px;
+	font-size: 12px;
+	overflow: auto;
+	overflow-x: hidden;
+	background-color: rgba(19, 255, 0, 0.1);
+}
+.user{
+	cursor:pointer;
+	padding: 20px 25px;
+	background: pink;
+	position:relative;
+}
+
+.user:hover{
+	background: #f8f8f8;
+}
+.user:before{
+	content:"";
+	position:absolute;
+	background: #2ecc71;
+	width:10px;
+	height: 10px;
+	left: 5px;
+	top:24px;
+	border-radius: 5PX;
+}
+.msg_a{
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-left: 20px;
+	min-height: 15px; 
+	padding:15px;
+	background: #99FFCC;
+	position: relative;
+	border-radius: 5px;
+
+}
+.msg_a:before{
+	content:"";
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	top: 7px;
+	left: -29px;
+	border:15px solid;
+	border-color:transparent #99FFCC transparent transparent;
+}
+.msg_b{
+
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-left: 20px;
+	min-height: 15px;
+	padding:15px;
+	background: #FFFF99;
+	position: relative;
+	border-radius: 5px;
+
+}
+.msg_b:before{
+	content:"";
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	top: 7px;
+	right: -29px;
+	border:15px solid;
+	border-color:transparent  transparent transparent #FFFF99;
+}
+
+
+
+#Eli:before {
+	content: "";
+    position: absolute;
+    background: red;
+    width: 10px;
+    height: 10px;
+    left: 5px;
+    top: 24px;
+    border-radius: 5PX;

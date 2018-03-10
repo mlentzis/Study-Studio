@@ -1,0 +1,241 @@
+
+/* Michael Lentzis */
+/* About */
+
+h1 {
+    margin: 8%;
+    font-size: 2em;
+    margin-left: 5%;
+    margin-bottom: 50px;
+    font-family: arial;
+    color: rgb(64,125,59);
+    margin-top: 0%;
+    padding-top: 5%;
+}
+
+/*
+ol{
+	margin-left: 11.5%;
+	font-family: arial;
+	font-size: 1.1em;
+
+}
+li{
+	margin-bottom: 10px;
+	color: black;
+	padding-left: 12px;
+	margin-bottom: 15px;
+}
+*/
+
+
+/* Michael Lentzis */
+div#setCenter{
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	min-width: 720px;
+}
+
+img#design{
+	margin-left: 62.5%;
+    margin-bottom: -50%;
+    background: transparent;
+}
+
+h3{
+	margin-left: 15%;
+    font-size: 1em;
+    font-family: arial;
+    margin-top: 75px;
+	
+}
+
+
+
+
+/* Create Flashcards */
+
+h2{
+	margin-left: 10%;
+    font-family: arial;
+    margin-top: 75px;
+    font-size: 1em;	
+    margin-bottom: -5%;	
+}
+
+h4{
+	margin-left: 10%;
+    font-family: arial;
+    margin-top: 75px;
+    font-size: 1.5em;
+}
+
+
+
+
+input#title {
+    margin-left: 10%;
+    padding-right: 125px;
+    font-size: 15px;
+	border: 1.8px solid rgb(146, 143, 143);
+  	
+}
+
+
+div#Card{
+    background-image: url("FlashCard.svg");
+    height: 350px;
+    background-repeat: no-repeat;
+    margin-left: 20%;
+    margin-top: 75px;
+    
+    
+    
+}
+
+/*
+div#toolbar{
+	 background-image: url(toolbar.jpg);
+ 	background-repeat: no-repeat;
+    background-size: 72% 100%;	
+    height: 500px;
+    width: 200px;
+    background-color: rgb(64,152,59);
+   
+}
+*/
+
+
+              
+textarea#CardTextBox {
+    background-color: rgba(0,0,0,0);
+    color: black;
+    border: none;
+    height: 340px;
+    width: 705px;
+    margin-left: 2px;
+    font-size: 16px;
+    font-family: arial;
+    padding-top: 0px;
+   /* max-width: 598px;
+    max-height: 282px;
+    */
+} 
+
+            
+button#buttonPrevious {
+    margin-left: 22%;
+    margin-top: 25px;
+    padding: 10px;
+    border: black;
+
+
+}  
+/*
+form {
+	width:0px;
+	display:block;
+	clear: both;
+	padding: 0px;
+	margin:0px;
+	float: left;
+}
+*/
+button#buttonNext {
+    margin-left: 32%;
+    margin-top: 25px;
+    padding: 10px;
+    border: black;
+	cursor: pointer;
+}  
+
+input#buttonSave {
+    margin-top: 40px;
+    padding: 10px;
+    border: black;
+    margin-left: 31%;
+    margin-right: 15px;
+	cursor: pointer;
+}
+
+
+
+}  
+
+button#imgButton {
+    font-size: 1.1em;
+    
+/*	background-color: rgba(0,0,0,0);
+    border: none;
+   */
+}
+
+button#micButton {
+    font-size: 1.1em;
+    
+  /*  background-color: rgba(0,0,0,0);
+    border: none;  */
+    
+   
+}
+
+div#designCreate{
+	background-image: url("design.png");
+	background-repeat: no-repeat;
+	height: 600px;
+	width:100%;
+	background-position: right;
+	float: left;
+
+}
+
+
+div.button{
+	width: 60px;
+    height: 60px;
+    background-color: blue;
+    margin: 20px;
+    float: left;
+    border-radius: 6px;
+    margin-top: 40px;
+	border: black;
+	
+}
+
+div.nicEdit-main {
+	margin: 23.8%;
+    padding-top: 30px;
+	padding-left: 8px;
+}
+
+div.nicEdit-panelContain {
+margin-top: -6%;
+overflow: hidden;
+width: 100%;
+border: 1px solid rgb(204, 204, 204);
+background-color: rgb(239, 239, 239);
+}
+	
+
+/* Display Page */ 
+
+div.TheCard1{
+	
+	width: 500px;
+    height: 350px;
+    background-repeat: no-repeat;
+	float:left;
+    background-color: rgba(125, 185, 222, 1);
+	margin: 30px;
+	margin-left: 55px;
+    margin-right: 10px;
+
+}
+   
+   /*
+  #holder{
+  	min-width:1500px;
+  } 
+    */                
+            

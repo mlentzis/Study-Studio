@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/*Common Containers for Text*/
+h1, h2, h3, h4, h5, h6, li, p, input, button, i, div, textarea {
+	font-family: 'Quicksand';
+}
+
+/*Navigation Bar Text*/
+nav > ul > li, #navSearch {
+	font-family: 'Quicksand';
+	font-weight: 900;
+
+}
+
+/*headings*/
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Paytone One';
+}	

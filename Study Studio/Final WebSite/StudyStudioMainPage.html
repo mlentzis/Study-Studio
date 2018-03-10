@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Study Studio - Home</title>
+        <!-- Reset page styles  -->
+		<link href="reset.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-2.1.0-rc1.min.js"></script>
+		<script src="script.js"></script>
+		<link href="style.css" rel="stylesheet">
+		<link href="StudyStudioStyles.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Paytone+One" rel="stylesheet">
+		<link href="fonts.css" rel="stylesheet">
+    </head>
+    
+	<header>
+        <!-- <img src="background1.svg" alt=""/> -->
+		<div id="navImg"> <div id="logo2"> </div>  </div>
+        <nav id="headNav"><!-- start of navigation bar -->
+            <ul id="left">
+            <!--
+                <li><a href="StudyStudioMainPage.html">Study Studio</a></li>
+                <li><a href="StudyStudioTopicPage.html">Subject</a></li>
+                <li><a href="About.html">About Us</a></li>
+				<li><a href="StudyStudioFlashCreate.html">Create</a></li>
+				-->
+            </ul>
+            <ul id="right">
+                <li><input type="search" id="navSearch" placeholder="Search"></li>
+              <!--  <li><a href="StudyStudioHomePage.html">Logout</a></li> -->
+            </ul>
+        </nav><!-- end nav -->
+    </header>
+
+		
+		<div id="designCreate">
+		<section id="SectionLeft">
+			<div class="container" id="container1">
+				<h2 id="flashcard">Flash Cards</h2>
+				<ol>
+				<!--
+				<li><a href="Display.html">Chemistry Flashcards</a></li>
+				<li><a href="Display2.html">Algebra Flashcards</a></li>
+				<li><a href="Display3.html">CS Flashcards</a></li>
+				-->
+				 <?php
+            $connect = mysql_connect("localhost","root", "studystudio");
+            if (!$connect) {
+                die(mysql_error());
+            }
+            mysql_select_db("StudyStudio");
+            $results = mysql_query("SELECT * FROM 'bundles'");
+            while($row = mysql_fetch_array($results)) {
+
+                echo $row['flashcardID'] . "</br>";
+
+
+            ?>
+				</ol>
+	
+			</div>
+				
+			<div class="container" id="container2">
+				<h2 id="friendscards">Friends Cards</h2>
+				<ol>
+				<li>Mike's Flashcards</li>
+				<li>Ahmed's Flashcards</li>
+				<li>Kim's Flashcards</li>
+				</ol>
+				<p class="more">More...</p>
+			</div>
+		</section>
+		
+		<section id="SectionRight">
+			<div class="chat_box">
+				<div class="chat_head">Chatbox</div>
+				<div class="Chat_body">
+					<div class="user">Ahmed Kamara</div>
+					<div class="user" id="Eli">Eli Brown</div>
+				</div>
+			</div>
+		
+			<div class="msg_box" style="right:290px">
+				<div class="msg_head">Ahmed Kamara
+					<div class="close">x</div>
+				</div>
+				<div class="msg_wrap">
+					<div class="msg_body">
+						<div class="msg_a">Simle message</div>
+						<div class="msg_b">Simple message</div>
+						<div class="msg_insert"></div>
+					</div>
+					<div class="msg_footer">
+						<textarea class="msg_input" row="4" placeholder="Type Your Message"></textarea>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		
+		
+		</div>
+		
+	<!-- useless -->
+	<script class="">		
+		var rightNav = document.getElementById('right').offsetWidth;
+			if (rightNav < 800){
+				<!--rightNav.remove(rightNav);--><!-- attempting to remove right Nav with Java Script -->
+				console.log("This statement ran.");
+			}
+		console.log(rightNav);
+		console.log(rightNav.offset);
+	</script>
+
+
+
+
+	<footer>
+                <p id="footer">
+				    <!-- information here -->
+				</p>
+				
+				<!-- three column layout for footer information, if needed -->
+				<nav id="end">
+					<ul>
+						<div id="col1">
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+						</div>
+						<div id="col2">
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+						</div>
+						<div id="col3">
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+						</div>
+					</ul>
+				</nav>
+        </footer>
